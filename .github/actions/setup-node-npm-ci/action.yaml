@@ -14,7 +14,7 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
 
-    - run: npm ci
+    - run: npm install --no-package-lock
       shell: bash
 
     - run: npm ls -a
